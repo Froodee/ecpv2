@@ -1,0 +1,405 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\projet\\ECPV2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\client\\viewmodel\\clientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\client\\viewmodel\\clientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\client\\view\\clientbuttoncontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\client\\view\\clientbuttoncontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\client\\view\\clienteditcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\client\\view\\clienteditcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\client\\view\\clientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\client\\view\\clientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\client\\viewmodel\\iclientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\client\\viewmodel\\iclientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\client\\view\\clientlistcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\client\\view\\clientlistcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\client\\view\\clientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\client\\view\\clientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\client\\view\\clientbuttoncontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\client\\view\\clientbuttoncontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\client\\view\\clientsearchcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\client\\view\\clientsearchcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\service\\smtp\\smtpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:service\\smtp\\smtpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\client\\view\\clientsearchcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\client\\view\\clientsearchcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\client\\view\\clientlistcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\client\\view\\clientlistcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\client\\view\\clienteditcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\client\\view\\clienteditcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\shell\\view\\shellwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\shell\\view\\shellwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\features\\shell\\view\\shellwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:features\\shell\\view\\shellwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\domain\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:domain\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\service\\command\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:service\\command\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\ecpv2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:ecpv2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\domain\\models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:domain\\models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\domain\\models\\employ\u00E9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:domain\\models\\employ\u00E9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|d:\\projet\\ecpv2\\domain\\models\\ecpcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2CF88B1-007B-4D18-89A4-84FA501FEB34}|ECPV2.csproj|solutionrelative:domain\\models\\ecpcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClassDiagram1.cd",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\ClassDiagram1.cd",
+              "RelativeDocumentMoniker": "ClassDiagram1.cd",
+              "ToolTip": "D:\\projet\\ECPV2\\ClassDiagram1.cd",
+              "RelativeToolTip": "ClassDiagram1.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2025-11-26T09:13:02.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientListControl.xaml",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientListControl.xaml",
+              "RelativeDocumentMoniker": "Features\\client\\View\\ClientListControl.xaml",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientListControl.xaml",
+              "RelativeToolTip": "Features\\client\\View\\ClientListControl.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwA0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-25T11:12:24.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientEditControl.xaml",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientEditControl.xaml",
+              "RelativeDocumentMoniker": "Features\\client\\View\\ClientEditControl.xaml",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientEditControl.xaml",
+              "RelativeToolTip": "Features\\client\\View\\ClientEditControl.xaml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-25T11:11:58.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientButtonControl.xaml",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientButtonControl.xaml",
+              "RelativeDocumentMoniker": "Features\\client\\View\\ClientButtonControl.xaml",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientButtonControl.xaml",
+              "RelativeToolTip": "Features\\client\\View\\ClientButtonControl.xaml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwBwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-25T11:11:21.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IClientViewModel.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\client\\ViewModel\\IClientViewModel.cs",
+              "RelativeDocumentMoniker": "Features\\client\\ViewModel\\IClientViewModel.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\client\\ViewModel\\IClientViewModel.cs",
+              "RelativeToolTip": "Features\\client\\ViewModel\\IClientViewModel.cs",
+              "ViewState": "AgIAAAsAAADwZ2ZmZkYywBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T09:48:37.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientViewModel.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\client\\ViewModel\\ClientViewModel.cs",
+              "RelativeDocumentMoniker": "Features\\client\\ViewModel\\ClientViewModel.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\client\\ViewModel\\ClientViewModel.cs*",
+              "RelativeToolTip": "Features\\client\\ViewModel\\ClientViewModel.cs*",
+              "ViewState": "AgIAALUAAAAAAAAAAAAowLkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:54:09.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientPage.xaml",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientPage.xaml",
+              "RelativeDocumentMoniker": "Features\\client\\View\\ClientPage.xaml",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientPage.xaml",
+              "RelativeToolTip": "Features\\client\\View\\ClientPage.xaml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-25T11:08:28.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ClientSearchControl.xaml",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientSearchControl.xaml",
+              "RelativeDocumentMoniker": "Features\\client\\View\\ClientSearchControl.xaml",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientSearchControl.xaml",
+              "RelativeToolTip": "Features\\client\\View\\ClientSearchControl.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-25T11:10:12.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClientPage.xaml.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientPage.xaml.cs",
+              "RelativeDocumentMoniker": "Features\\client\\View\\ClientPage.xaml.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientPage.xaml.cs",
+              "RelativeToolTip": "Features\\client\\View\\ClientPage.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:27:41.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SmtpService.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Service\\Smtp\\SmtpService.cs",
+              "RelativeDocumentMoniker": "Service\\Smtp\\SmtpService.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Service\\Smtp\\SmtpService.cs",
+              "RelativeToolTip": "Service\\Smtp\\SmtpService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:35:46.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClientButtonControl.xaml.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientButtonControl.xaml.cs",
+              "RelativeDocumentMoniker": "Features\\client\\View\\ClientButtonControl.xaml.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientButtonControl.xaml.cs",
+              "RelativeToolTip": "Features\\client\\View\\ClientButtonControl.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAMwBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:07:47.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\projet\\ECPV2\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-25T11:34:56.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:35:15.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClientSearchControl.xaml.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientSearchControl.xaml.cs",
+              "RelativeDocumentMoniker": "Features\\client\\View\\ClientSearchControl.xaml.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientSearchControl.xaml.cs",
+              "RelativeToolTip": "Features\\client\\View\\ClientSearchControl.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:14:39.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ClientListControl.xaml.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientListControl.xaml.cs",
+              "RelativeDocumentMoniker": "Features\\client\\View\\ClientListControl.xaml.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientListControl.xaml.cs",
+              "RelativeToolTip": "Features\\client\\View\\ClientListControl.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:14:15.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ClientEditControl.xaml.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientEditControl.xaml.cs",
+              "RelativeDocumentMoniker": "Features\\client\\View\\ClientEditControl.xaml.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\client\\View\\ClientEditControl.xaml.cs",
+              "RelativeToolTip": "Features\\client\\View\\ClientEditControl.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:13:51.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ShellWindow.xaml.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\shell\\View\\ShellWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Features\\shell\\View\\ShellWindow.xaml.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\shell\\View\\ShellWindow.xaml.cs",
+              "RelativeToolTip": "Features\\shell\\View\\ShellWindow.xaml.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAnwDgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:18:34.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ShellWindow.xaml",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Features\\shell\\View\\ShellWindow.xaml",
+              "RelativeDocumentMoniker": "Features\\shell\\View\\ShellWindow.xaml",
+              "ToolTip": "D:\\projet\\ECPV2\\Features\\shell\\View\\ShellWindow.xaml",
+              "RelativeToolTip": "Features\\shell\\View\\ShellWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-25T11:19:28.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Service\\Command\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Service\\Command\\RelayCommand.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Service\\Command\\RelayCommand.cs",
+              "RelativeToolTip": "Service\\Command\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:55:44.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ECPV2.csproj",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\ECPV2.csproj",
+              "RelativeDocumentMoniker": "ECPV2.csproj",
+              "ToolTip": "D:\\projet\\ECPV2\\ECPV2.csproj",
+              "RelativeToolTip": "ECPV2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-25T10:53:46.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Client.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Domain\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Client.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Domain\\Models\\Client.cs",
+              "RelativeToolTip": "Domain\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:50:48.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Utilisateur.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Domain\\Models\\Utilisateur.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Utilisateur.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Domain\\Models\\Utilisateur.cs",
+              "RelativeToolTip": "Domain\\Models\\Utilisateur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:05:08.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Employ\u00E9.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Domain\\Models\\Employ\u00E9.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Employ\u00E9.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Domain\\Models\\Employ\u00E9.cs",
+              "RelativeToolTip": "Domain\\Models\\Employ\u00E9.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:04:39.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EcpContext.cs",
+              "DocumentMoniker": "D:\\projet\\ECPV2\\Domain\\Models\\EcpContext.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\EcpContext.cs",
+              "ToolTip": "D:\\projet\\ECPV2\\Domain\\Models\\EcpContext.cs",
+              "RelativeToolTip": "Domain\\Models\\EcpContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T09:43:35.231Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ECPV2.Domain.Models.Admin">
+    <Position X="10" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAACAMAAgAAAAAAAAAAAAAABAAAAAAAKAAAAAA=</HashCode>
+      <FileName>Domain\Models\Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ECPV2.Domain.Models.Avi">
+    <Position X="4.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAACAIAAAAAAIAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\Avi.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IduserNavigation" />
+      <Property Name="RefpdsNavigation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ECPV2.Domain.Models.Client">
+    <Position X="12.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAACAMAAgAAAAAAAAAAAAAAAAAAAAAAKAAIAAA=</HashCode>
+      <FileName>Domain\Models\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ECPV2.Domain.Models.Commande">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAQCAIAAAAAAAAAAAAAAAAgAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Domain\Models\Commande.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IduserNavigation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ECPV2.Domain.Models.Connexion">
+    <Position X="14" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAABAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Domain\Models\Connexion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ECPV2.Domain.Models.EcpContext">
+    <Position X="15.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAUAUAAQAACAAAQAAEAAABAAAAAABEAAAIAQ=</HashCode>
+      <FileName>Domain\Models\EcpContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ECPV2.Domain.Models.Employé">
+    <Position X="8" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAACAMAAgAAgAAAAAAAAAgAAAAAAAAAKAAAAAA=</HashCode>
+      <FileName>Domain\Models\Employé.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ECPV2.Domain.Models.Facture">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQIAAAAAAAEAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Models\Facture.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NumcdeNavigation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ECPV2.Domain.Models.Produit">
+    <Position X="2" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAACAgABAIAAgAAAAASiBAAAACAAAAAAgAA=</HashCode>
+      <FileName>Domain\Models\Produit.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CodetypNavigation" />
+      <Property Name="IdpromoNavigation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ECPV2.Domain.Models.Promo">
+    <Position X="1.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAAAEAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Domain\Models\Promo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ECPV2.Domain.Models.Typeproduit">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAgAQ=</HashCode>
+      <FileName>Domain\Models\Typeproduit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ECPV2.Domain.Models.Utilisateur">
+    <Position X="12" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAACAEQAgAAAAAAAQAAAAAAAAAAAAEAKAAAIAQ=</HashCode>
+      <FileName>Domain\Models\Utilisateur.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Admin" />
+      <Property Name="Client" />
+      <Property Name="Employé" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

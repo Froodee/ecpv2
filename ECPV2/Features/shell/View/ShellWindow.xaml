@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="ECPV2.Features.shell.View.ShellWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ECPV2.Features.shell.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="ShellWindow">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop />
+    </Window.SystemBackdrop>
+
+    <Grid>
+        <NavigationView x:Name="nav" SelectionChanged="nav_SelectionChanged">
+            <NavigationView.MenuItems >
+                <NavigationViewItem Content="Tableau de bord"  Icon="Home"/>
+                <NavigationViewItem Content="Statistique" Tag="Statistique" Icon="Contact2"/>
+                <NavigationViewItem Content="Client" Tag="Client" Icon="Contact"/>
+                <NavigationViewItem Content="Produit"  Tag="Produit" Icon="Contact" />
+                <NavigationViewItem Content="Employé"  Tag="Employe" Icon="Contact" />
+                
+
+                <NavigationViewItem Content="Se déconnecter" Icon="Next"/>
+            </NavigationView.MenuItems>
+            <NavigationView.Content>
+                <Frame x:Name="MainFrame" Background="White"/>
+            </NavigationView.Content>
+
+
+        </NavigationView>
+
+
+
+    </Grid>
+</Window>

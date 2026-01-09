@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ECPV2 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ECPV2 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

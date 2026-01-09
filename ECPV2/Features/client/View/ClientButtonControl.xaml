@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="ECPV2.Features.client.View.ClientButtonControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+
+    <StackPanel Spacing="10" Margin="10" MinWidth="120">
+        <Button Content="Nouveau" 
+                Command="{Binding CommandClientNew,Mode=TwoWay}"/>
+
+        <Button Content="Éditer" 
+                Command="{Binding CommandClientEdit,Mode=TwoWay}"
+                />
+
+        <Button Content="Enregistrer" 
+                Command="{Binding CommandClientSave,Mode=TwoWay}"
+                IsEnabled="True"
+                />
+
+        <Button Content="Supprimer" 
+                Command="{Binding CommandClientDelete,Mode=TwoWay}"
+                IsEnabled="True"
+                />
+
+        <Button Content="Annuler" 
+                Command="{Binding CommandClientCancel,Mode=TwoWay}"
+                IsEnabled="True"
+                />
+    </StackPanel>
+</UserControl>
