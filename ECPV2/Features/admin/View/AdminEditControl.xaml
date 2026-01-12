@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="ECPV2.Features.admin.View.AdminEditControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+
+    <ScrollViewer>
+        <StackPanel Margin="20" Spacing="12" MaxWidth="500">
+            <TextBlock Text="Fiche Admin" FontSize="18" FontWeight="Bold" Margin="0,0,0,15"/>
+
+            <!-- ID (désactivé) -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="ID :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding AdminSelected.Iduser, Mode=TwoWay}"
+                         IsEnabled="False" Background="#f0f0f0"/>
+            </StackPanel>
+
+            <!-- Nom -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="Nom :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding AdminSelected.Nomuser, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"/>
+            </StackPanel>
+
+            <!-- Adresse -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="Adresse :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding AdminSelected.Adruser, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"/>
+            </StackPanel>
+
+            <!-- Code Postal -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="Code Postal :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding AdminSelected.Cpuser, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"/>
+            </StackPanel>
+
+            <!-- Ville -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="Ville :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding AdminSelected.Villeuser, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"/>
+            </StackPanel>
+
+            <!-- Téléphone -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="Téléphone :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding AdminSelected.Numuser, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"/>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

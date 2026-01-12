@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ren ClientSearchControl.xaml ClientSearchControl_temp.xaml)",
+      "Bash(ren ClientSearchControl.xaml.cs ClientSearchControl_temp.xaml.cs)",
+      "Bash(dir:*)",
+      "Bash(dotnet build:*)",
+      "Bash(dotnet clean:*)",
+      "Bash(findstr:*)",
+      "Bash(powershell -Command \"dotnet build -c Debug -v d 2>&1 | Select-String ''Promo|xaml|error'' | head -50\")",
+      "Bash(git checkout:*)",
+      "Bash(wc:*)",
+      "Bash(find:*)"
+    ]
+  }
+}

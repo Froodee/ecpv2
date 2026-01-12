@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="ECPV2.Features.produit.View.ProduitEditControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+
+    <ScrollViewer>
+        <StackPanel Margin="20" Spacing="12" MaxWidth="500">
+            <TextBlock Text="Fiche Produit" FontSize="18" FontWeight="Bold" Margin="0,0,0,15"/>
+
+            <!-- Référence (désactivée) -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="Référence :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding ProduitSelected.Refpds, Mode=TwoWay}"
+                         IsEnabled="False" Background="#f0f0f0"/>
+            </StackPanel>
+
+            <!-- ID Promotion -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="ID Promo :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding ProduitSelected.Idpromo, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"/>
+            </StackPanel>
+
+            <!-- Code Type -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="Code Type :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding ProduitSelected.Codetyp, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"/>
+            </StackPanel>
+
+            <!-- Quantité -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="Quantité :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding ProduitSelected.Qtepds, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"/>
+            </StackPanel>
+
+            <!-- Prix -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="Prix :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding ProduitSelected.Prixpds, Mode=TwoWay, StringFormat='{0:F2}'}"
+                         IsEnabled="{Binding IsEditable}"/>
+            </StackPanel>
+
+            <!-- Libellé -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="Libellé :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding ProduitSelected.Libpds, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"/>
+            </StackPanel>
+
+            <!-- Description -->
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock Text="Description :" Width="120"/>
+                <TextBox Text="{Binding ProduitSelected.Descpds, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"
+                         Height="80"
+                         AcceptsReturn="True"
+                         TextWrapping="Wrap"/>
+            </StackPanel>
+
+            <!-- Désignation -->
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock Text="Désignation :" Width="120"/>
+                <TextBox Text="{Binding ProduitSelected.Designpds, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"
+                         Height="80"
+                         AcceptsReturn="True"
+                         TextWrapping="Wrap"/>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

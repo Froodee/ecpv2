@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="ECPV2.Features.avis.View.AvisEditControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+
+    <ScrollViewer>
+        <StackPanel Margin="20" Spacing="12" MaxWidth="500">
+            <TextBlock Text="Fiche Avis" FontSize="18" FontWeight="Bold" Margin="0,0,0,15"/>
+
+            <!-- Refpds -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="Refpds :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding AvisSelected.Refpds, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"/>
+            </StackPanel>
+
+            <!-- Iduser -->
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <TextBlock Text="Iduser :" Width="120" VerticalAlignment="Center"/>
+                <TextBox Text="{Binding AvisSelected.Iduser, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"/>
+            </StackPanel>
+
+            <!-- Commentaire -->
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock Text="Commentaire :" FontWeight="Bold"/>
+                <TextBox Text="{Binding AvisSelected.Commentaire, Mode=TwoWay}"
+                         IsEnabled="{Binding IsEditable}"
+                         MinHeight="150"
+                         TextWrapping="Wrap"
+                         AcceptsReturn="True"/>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

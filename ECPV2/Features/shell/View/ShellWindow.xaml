@@ -16,14 +16,21 @@
     <Grid>
         <NavigationView x:Name="nav" SelectionChanged="nav_SelectionChanged">
             <NavigationView.MenuItems >
-                <NavigationViewItem Content="Tableau de bord"  Icon="Home"/>
-                <NavigationViewItem Content="Statistique" Tag="Statistique" Icon="Contact2"/>
-                <NavigationViewItem Content="Client" Tag="Client" Icon="Contact"/>
-                <NavigationViewItem Content="Produit"  Tag="Produit" Icon="Contact" />
-                <NavigationViewItem Content="Employé"  Tag="Employe" Icon="Contact" />
-                
+                <NavigationViewItem Content="Tableau de bord" Tag="Dashboard" Icon="Home"/>
 
-                <NavigationViewItem Content="Se déconnecter" Icon="Next"/>
+                <NavigationViewItemHeader Content="Gestion Utilisateurs"/>
+                <NavigationViewItem Content="Clients" Tag="Client" Icon="People"/>
+                <NavigationViewItem Content="Employés" Tag="Employe" Icon="Contact"/>
+                <NavigationViewItem Content="Administrateurs" Tag="Admin" Icon="Admin"/>
+
+                <NavigationViewItemHeader Content="Gestion Catalogue"/>
+                <NavigationViewItem Content="Produits" Tag="Produit" Icon="Shop"/>
+                <NavigationViewItem Content="Promotions" Tag="Promo" Icon="Download"/>
+                <NavigationViewItem Content="Avis Clients" Tag="Avis" Icon="Message"/>
+
+                <NavigationViewItemHeader Content="Autres"/>
+                <NavigationViewItem Content="Statistiques" Tag="Statistique" Icon="Chart"/>
+                <NavigationViewItem Content="Se déconnecter" Tag="Logout" Icon="LeaveChat"/>
             </NavigationView.MenuItems>
             <NavigationView.Content>
                 <Frame x:Name="MainFrame" Background="White"/>

@@ -1,18 +1,14 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using ECPV2.Features.client.View;
+using ECPV2.Features.employe.View;
+using ECPV2.Features.admin.View;
+using ECPV2.Features.produit.View;
+using ECPV2.Features.promo.View;
+using ECPV2.Features.avis.View;
+using ECPV2.Features.auth.View;
 
 
 namespace ECPV2.Features.shell.View
@@ -40,28 +36,73 @@ namespace ECPV2.Features.shell.View
         {
             try
             {
-                // Vérifier si un élément est sélectionné
+                // Vï¿½rifier si un ï¿½lï¿½ment est sï¿½lectionnï¿½
                 if (args.SelectedItemContainer != null)
                 {
-                    // Récupérer le tag de l'élément sélectionné (ou une autre propriété comme le contenu)
+                    // Rï¿½cupï¿½rer le tag de l'ï¿½lï¿½ment sï¿½lectionnï¿½ (ou une autre propriï¿½tï¿½ comme le contenu)
                     var selectedItem = args.SelectedItemContainer as NavigationViewItem;
                     string? tag = selectedItem?.Tag?.ToString();
 
                     
                     switch (tag)
                     {
+                        case "Dashboard":
+                            // TODO: CrÃ©er une page Dashboard
+                            break;
+
                         case "Client":
-                            
                             MainFrame.Navigate(typeof(ClientPage));
                             break;
-                        
-                        
+
+                        case "Employe":
+                            MainFrame.Navigate(typeof(EmployePage));
+                            break;
+
+                        case "Admin":
+                            MainFrame.Navigate(typeof(AdminPage));
+                            break;
+
+                        case "Produit":
+                            MainFrame.Navigate(typeof(ProduitPage));
+                            break;
+
+                        case "Promo":
+                            MainFrame.Navigate(typeof(PromoPage));
+                            break;
+
+                        case "Avis":
+                            MainFrame.Navigate(typeof(AvisPage));
+                            break;
+
+                        case "Statistique":
+                            // TODO: CrÃ©er une page Statistiques
+                            break;
+
+                        case "Logout":
+                            HandleLogout();
+                            break;
                     }
                 }
             }
             catch (Exception ex)
             {
                 LogException("Erreur navigation ShellWindow", ex);
+            }
+        }
+
+        private void HandleLogout()
+        {
+            try
+            {
+                // Fermer la fenÃªtre shell et rouvrir la page de connexion
+                var authWindow = new Window();
+                authWindow.Content = new AuthPage();
+                authWindow.Activate();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                LogException("Erreur dÃ©connexion", ex);
             }
         }
 
