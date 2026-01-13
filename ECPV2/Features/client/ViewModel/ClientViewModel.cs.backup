@@ -1,4 +1,4 @@
-using ECPV2.Core.ViewModels;
+﻿using ECPV2.Core.ViewModels;
 using ECPV2.Domain.Models;
 using ECPV2.Services.Command;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +13,7 @@ namespace ECPV2.Features.client.ViewModel
     {
         private string _nomSearch = string.Empty;
         private Client? _clientSelected;
+        private Commande? _commandeSelected;
         private bool _editable = false;
 
         private ObservableCollection<Client> _clients = new();
@@ -21,13 +22,13 @@ namespace ECPV2.Features.client.ViewModel
         public string NomSearch
         {
             get => _nomSearch;
-            set => SetProperty(ref _nomSearch, value);
+            set { _nomSearch = value; OnPropertyChanged(); }
         }
 
-        public ObservableCollection<Client> Clients
+        public List<Client> Clients
         {
             get => _clients;
-            set => SetProperty(ref _clients, value);
+            set { _clients = value; OnPropertyChanged(); }
         }
 
         public Client? ClientSelected
@@ -35,10 +36,11 @@ namespace ECPV2.Features.client.ViewModel
             get => _clientSelected;
             set
             {
-                if (SetProperty(ref _clientSelected, value))
+                if (_clientSelected != value)
                 {
+                    _clientSelected = value;
+                    OnPropertyChanged();
                     ReloadCommandes();
-                    // Notifier les commandes qui dépendent de la sélection
                     (CommandClientEdit as RelayCommand)?.RaiseCanExecuteChanged();
                     (CommandClientDelete as RelayCommand)?.RaiseCanExecuteChanged();
                 }
@@ -50,14 +52,21 @@ namespace ECPV2.Features.client.ViewModel
             get => _commandes;
         }
 
+        public Commande CommandeSelected
+        {
+            get => _commandeSelected;
+            set { _commandeSelected = value; OnPropertyChanged(); }
+        }
+
         public bool IsEditable
         {
             get => _editable;
             set
             {
-                if (SetProperty(ref _editable, value))
+                if (_editable != value)
                 {
-                    // Notifier toutes les commandes que CanExecute a changé
+                    _editable = value;
+                    OnPropertyChanged();
                     (CommandClientNew as RelayCommand)?.RaiseCanExecuteChanged();
                     (CommandClientEdit as RelayCommand)?.RaiseCanExecuteChanged();
                     (CommandClientSave as RelayCommand)?.RaiseCanExecuteChanged();
@@ -67,6 +76,7 @@ namespace ECPV2.Features.client.ViewModel
             }
         }
 
+        
         public ICommand CommandClientNew { get; }
         public ICommand CommandClientEdit { get; }
         public ICommand CommandClientSave { get; }
@@ -74,7 +84,7 @@ namespace ECPV2.Features.client.ViewModel
         public ICommand CommandClientSearch { get; }
         public ICommand CommandClientCancel { get; }
 
-        private readonly EcpContext _context;
+        private readonly EcpContext _context; 
 
         public ClientViewModel()
         {
@@ -90,15 +100,14 @@ namespace ECPV2.Features.client.ViewModel
                 CommandClientSearch = new RelayCommand(_ => ActionClientSearch(), _ => CanClientSearch());
                 CommandClientCancel = new RelayCommand(_ => ActionClientCancel(), _ => CanClientCancel());
 
-                var clientsList = _context.Clients
+                Clients = _context.Clients
                     .Include(c => c.IduserNavigation)
                     .ToList();
-                Clients = new ObservableCollection<Client>(clientsList);
             }
             catch (Exception ex)
             {
                 LogException("Erreur initialisation ClientViewModel", ex);
-                Clients = new ObservableCollection<Client>();
+                Clients = new();
             }
         }
 
@@ -106,14 +115,7 @@ namespace ECPV2.Features.client.ViewModel
         {
             try
             {
-                var utilisateur = new Utilisateur
-                {
-                    Nomuser = string.Empty,
-                    Adruser = string.Empty,
-                    Cpuser = 0,
-                    Villeuser = string.Empty,
-                    Numuser = 0
-                };
+                var utilisateur = new Utilisateur { Nomuser = "", Adruser = "", Cpuser = 0, Villeuser = "", Numuser = 0 };
                 ClientSelected = new Client
                 {
                     IduserNavigation = utilisateur
@@ -148,15 +150,14 @@ namespace ECPV2.Features.client.ViewModel
         {
             try
             {
-                if (ClientSelected == null) return;
-
+                
                 if (ClientSelected.Iduser == 0)
                 {
                     var utilisateur = new Utilisateur
                     {
                         Nomuser = ClientSelected.Nomuser,
                         Adruser = ClientSelected.Adruser,
-                        Cpuser = (short)ClientSelected.Cpuser,
+                        Cpuser = ClientSelected.Cpuser,
                         Villeuser = ClientSelected.Villeuser,
                         Numuser = ClientSelected.Numuser
                     };
@@ -168,13 +169,14 @@ namespace ECPV2.Features.client.ViewModel
                     };
 
                     _context.Utilisateurs.Add(utilisateur);
-                    _context.SaveChanges();
+                    _context.SaveChanges(); // Pour générer l'Iduser
 
                     client.Iduser = utilisateur.Iduser;
                     _context.Clients.Add(client);
                 }
                 else
                 {
+                    // Mise à jour
                     _context.Utilisateurs.Update(ClientSelected.IduserNavigation);
                     _context.Clients.Update(ClientSelected);
                 }
@@ -193,7 +195,7 @@ namespace ECPV2.Features.client.ViewModel
         {
             try
             {
-                if (ClientSelected != null)
+                if (ClientSelected!= null)
                 {
                     var utilisateur = ClientSelected.IduserNavigation;
                     _context.Clients.Remove(ClientSelected);
@@ -209,7 +211,7 @@ namespace ECPV2.Features.client.ViewModel
             }
         }
 
-        private bool CanClientDelete() => ClientSelected != null && !IsEditable;
+        private bool CanClientDelete() => ClientSelected!= null && !IsEditable;
 
         private bool CanClientSearch() => true;
 
@@ -224,19 +226,18 @@ namespace ECPV2.Features.client.ViewModel
                 else
                 {
                     var search = NomSearch.ToLower();
-                    var results = _context.Clients
+                    Clients = _context.Clients
                         .Include(c => c.IduserNavigation)
                         .Where(c => c.Nomuser.ToLower().Contains(search) ||
                                    (c.Siret != null && c.Siret.ToString().Contains(search)) ||
                                    c.IduserNavigation.Villeuser.ToLower().Contains(search))
                         .ToList();
-                    Clients = new ObservableCollection<Client>(results);
                 }
             }
             catch (Exception ex)
             {
                 LogException("Erreur ActionClientSearch", ex);
-                Clients = new ObservableCollection<Client>();
+                Clients = new();
             }
         }
 
@@ -283,16 +284,38 @@ namespace ECPV2.Features.client.ViewModel
 
         private void RefreshClientsList()
         {
-            var clientsList = _context.Clients
+            Clients = _context.Clients
                 .Include(c => c.IduserNavigation)
                 .ToList();
-            Clients = new ObservableCollection<Client>(clientsList);
         }
 
-        public override void Dispose()
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        private void OnPropertyChanged([CallerMemberName] string? propertyName = null)
+            => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+
+        // LOGS (identiques à ton code)
+        private void EnsureLogDirectory()
         {
-            _context?.Dispose();
-            base.Dispose();
+            try
+            {
+                var dir = Path.GetDirectoryName(LOG_PATH);
+                if (!Directory.Exists(dir)) Directory.CreateDirectory(dir!);
+            }
+            catch { }
+        }
+
+        private void LogException(string context, Exception ex)
+        {
+            try
+            {
+                string entry = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] {context}\n" +
+                               $"Message: {ex.Message}\n" +
+                               $"StackTrace: {ex.StackTrace}\n" +
+                               new string('-', 50) + "\n";
+                File.AppendAllText(LOG_PATH, entry);
+            }
+            catch { }
         }
     }
 }

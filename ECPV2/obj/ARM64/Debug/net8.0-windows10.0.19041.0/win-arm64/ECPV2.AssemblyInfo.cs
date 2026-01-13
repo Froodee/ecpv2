@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ECPV2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6088352c0bc1847f115ff1b9d8528f3e13d15cb0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1c01c31879c3a8f21553853dba682b3722685d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ECPV2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ECPV2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

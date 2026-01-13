@@ -32,21 +32,38 @@ namespace ECPV2.Features.avis.ViewModel
         public Avi? AvisSelected
         {
             get => _avisSelected;
-            set => SetProperty(ref _avisSelected, value);
+            set
+            {
+                if (SetProperty(ref _avisSelected, value))
+                {
+                    (CommandAvisEdit as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandAvisDelete as RelayCommand)?.RaiseCanExecuteChanged();
+                }
+            }
         }
 
         public bool IsEditable
         {
             get => _editable;
-            set => SetProperty(ref _editable, value);
+            set
+            {
+                if (SetProperty(ref _editable, value))
+                {
+                    (CommandAvisNew as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandAvisEdit as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandAvisSave as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandAvisDelete as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandAvisCancel as RelayCommand)?.RaiseCanExecuteChanged();
+                }
+            }
         }
 
-        public ICommand CommandAvisNew { get; set; }
-        public ICommand CommandAvisEdit { get; set; }
-        public ICommand CommandAvisSave { get; set; }
-        public ICommand CommandAvisDelete { get; set; }
-        public ICommand CommandAvisSearch { get; set; }
-        public ICommand CommandAvisCancel { get; set; }
+        public ICommand CommandAvisNew { get; }
+        public ICommand CommandAvisEdit { get; }
+        public ICommand CommandAvisSave { get; }
+        public ICommand CommandAvisDelete { get; }
+        public ICommand CommandAvisSearch { get; }
+        public ICommand CommandAvisCancel { get; }
 
         private readonly EcpContext _context;
 
@@ -97,7 +114,7 @@ namespace ECPV2.Features.avis.ViewModel
             }
         }
 
-        public bool CanAvisNew() => true;
+        public bool CanAvisNew() => !IsEditable;
 
         public void ActionAvisEdit()
         {
@@ -113,7 +130,7 @@ namespace ECPV2.Features.avis.ViewModel
 
         private bool CanAvisEdit() => AvisSelected != null && !IsEditable;
 
-        private bool CanAvisSave() => true;
+        private bool CanAvisSave() => IsEditable;
 
         public void ActionAvisSave()
         {

@@ -32,21 +32,38 @@ namespace ECPV2.Features.produit.ViewModel
         public Produit? ProduitSelected
         {
             get => _produitSelected;
-            set => SetProperty(ref _produitSelected, value);
+            set
+            {
+                if (SetProperty(ref _produitSelected, value))
+                {
+                    (CommandProduitEdit as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandProduitDelete as RelayCommand)?.RaiseCanExecuteChanged();
+                }
+            }
         }
 
         public bool IsEditable
         {
             get => _editable;
-            set => SetProperty(ref _editable, value);
+            set
+            {
+                if (SetProperty(ref _editable, value))
+                {
+                    (CommandProduitNew as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandProduitEdit as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandProduitSave as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandProduitDelete as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandProduitCancel as RelayCommand)?.RaiseCanExecuteChanged();
+                }
+            }
         }
 
-        public ICommand CommandProduitNew { get; set; }
-        public ICommand CommandProduitEdit { get; set; }
-        public ICommand CommandProduitSave { get; set; }
-        public ICommand CommandProduitDelete { get; set; }
-        public ICommand CommandProduitSearch { get; set; }
-        public ICommand CommandProduitCancel { get; set; }
+        public ICommand CommandProduitNew { get; }
+        public ICommand CommandProduitEdit { get; }
+        public ICommand CommandProduitSave { get; }
+        public ICommand CommandProduitDelete { get; }
+        public ICommand CommandProduitSearch { get; }
+        public ICommand CommandProduitCancel { get; }
 
         private readonly EcpContext _context;
 
@@ -100,7 +117,7 @@ namespace ECPV2.Features.produit.ViewModel
             }
         }
 
-        public bool CanProduitNew() => true;
+        public bool CanProduitNew() => !IsEditable;
 
         public void ActionProduitEdit()
         {
@@ -116,7 +133,7 @@ namespace ECPV2.Features.produit.ViewModel
 
         private bool CanProduitEdit() => ProduitSelected != null && !IsEditable;
 
-        private bool CanProduitSave() => true;
+        private bool CanProduitSave() => IsEditable;
 
         public void ActionProduitSave()
         {

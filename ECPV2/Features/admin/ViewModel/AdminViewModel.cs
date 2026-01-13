@@ -36,7 +36,12 @@ namespace ECPV2.Features.admin.ViewModel
             set
             {
                 if (SetProperty(ref _adminSelected, value))
+                {
                     ReloadAvis();
+                    // Notifier les commandes qui dépendent de la sélection
+                    (CommandAdminEdit as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandAdminDelete as RelayCommand)?.RaiseCanExecuteChanged();
+                }
             }
         }
 
@@ -48,15 +53,26 @@ namespace ECPV2.Features.admin.ViewModel
         public bool IsEditable
         {
             get => _editable;
-            set => SetProperty(ref _editable, value);
+            set
+            {
+                if (SetProperty(ref _editable, value))
+                {
+                    // Notifier toutes les commandes que CanExecute a changé
+                    (CommandAdminNew as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandAdminEdit as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandAdminSave as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandAdminDelete as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandAdminCancel as RelayCommand)?.RaiseCanExecuteChanged();
+                }
+            }
         }
 
-        public ICommand CommandAdminNew { get; set; }
-        public ICommand CommandAdminEdit { get; set; }
-        public ICommand CommandAdminSave { get; set; }
-        public ICommand CommandAdminDelete { get; set; }
-        public ICommand CommandAdminSearch { get; set; }
-        public ICommand CommandAdminCancel { get; set; }
+        public ICommand CommandAdminNew { get; }
+        public ICommand CommandAdminEdit { get; }
+        public ICommand CommandAdminSave { get; }
+        public ICommand CommandAdminDelete { get; }
+        public ICommand CommandAdminSearch { get; }
+        public ICommand CommandAdminCancel { get; }
 
         private readonly EcpContext _context;
 
@@ -110,7 +126,7 @@ namespace ECPV2.Features.admin.ViewModel
             }
         }
 
-        public bool CanAdminNew() => true;
+        public bool CanAdminNew() => !IsEditable;
 
         public void ActionAdminEdit()
         {
@@ -124,9 +140,9 @@ namespace ECPV2.Features.admin.ViewModel
             }
         }
 
-        private bool CanAdminEdit() => true;
+        private bool CanAdminEdit() => AdminSelected != null && !IsEditable;
 
-        private bool CanAdminSave() => true;
+        private bool CanAdminSave() => IsEditable;
 
         public void ActionAdminSave()
         {

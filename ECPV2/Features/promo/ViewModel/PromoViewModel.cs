@@ -32,21 +32,38 @@ namespace ECPV2.Features.promo.ViewModel
         public Promo? PromoSelected
         {
             get => _promoSelected;
-            set => SetProperty(ref _promoSelected, value);
+            set
+            {
+                if (SetProperty(ref _promoSelected, value))
+                {
+                    (CommandPromoEdit as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandPromoDelete as RelayCommand)?.RaiseCanExecuteChanged();
+                }
+            }
         }
 
         public bool IsEditable
         {
             get => _editable;
-            set => SetProperty(ref _editable, value);
+            set
+            {
+                if (SetProperty(ref _editable, value))
+                {
+                    (CommandPromoNew as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandPromoEdit as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandPromoSave as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandPromoDelete as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandPromoCancel as RelayCommand)?.RaiseCanExecuteChanged();
+                }
+            }
         }
 
-        public ICommand CommandPromoNew { get; set; }
-        public ICommand CommandPromoEdit { get; set; }
-        public ICommand CommandPromoSave { get; set; }
-        public ICommand CommandPromoDelete { get; set; }
-        public ICommand CommandPromoSearch { get; set; }
-        public ICommand CommandPromoCancel { get; set; }
+        public ICommand CommandPromoNew { get; }
+        public ICommand CommandPromoEdit { get; }
+        public ICommand CommandPromoSave { get; }
+        public ICommand CommandPromoDelete { get; }
+        public ICommand CommandPromoSearch { get; }
+        public ICommand CommandPromoCancel { get; }
 
         private readonly EcpContext _context;
 
@@ -95,7 +112,7 @@ namespace ECPV2.Features.promo.ViewModel
             }
         }
 
-        public bool CanPromoNew() => true;
+        public bool CanPromoNew() => !IsEditable;
 
         public void ActionPromoEdit()
         {
@@ -109,9 +126,9 @@ namespace ECPV2.Features.promo.ViewModel
             }
         }
 
-        private bool CanPromoEdit() => PromoSelected != null;
+        private bool CanPromoEdit() => PromoSelected != null && !IsEditable;
 
-        private bool CanPromoSave() => true;
+        private bool CanPromoSave() => IsEditable;
 
         public void ActionPromoSave()
         {

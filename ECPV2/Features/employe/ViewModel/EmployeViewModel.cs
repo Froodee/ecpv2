@@ -32,21 +32,38 @@ namespace ECPV2.Features.employe.ViewModel
         public Employé? EmployeSelected
         {
             get => _employeSelected;
-            set => SetProperty(ref _employeSelected, value);
+            set
+            {
+                if (SetProperty(ref _employeSelected, value))
+                {
+                    (CommandEmployeEdit as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandEmployeDelete as RelayCommand)?.RaiseCanExecuteChanged();
+                }
+            }
         }
 
         public bool IsEditable
         {
             get => _editable;
-            set => SetProperty(ref _editable, value);
+            set
+            {
+                if (SetProperty(ref _editable, value))
+                {
+                    (CommandEmployeNew as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandEmployeEdit as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandEmployeSave as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandEmployeDelete as RelayCommand)?.RaiseCanExecuteChanged();
+                    (CommandEmployeCancel as RelayCommand)?.RaiseCanExecuteChanged();
+                }
+            }
         }
 
-        public ICommand CommandEmployeNew { get; set; }
-        public ICommand CommandEmployeEdit { get; set; }
-        public ICommand CommandEmployeSave { get; set; }
-        public ICommand CommandEmployeDelete { get; set; }
-        public ICommand CommandEmployeSearch { get; set; }
-        public ICommand CommandEmployeCancel { get; set; }
+        public ICommand CommandEmployeNew { get; }
+        public ICommand CommandEmployeEdit { get; }
+        public ICommand CommandEmployeSave { get; }
+        public ICommand CommandEmployeDelete { get; }
+        public ICommand CommandEmployeSearch { get; }
+        public ICommand CommandEmployeCancel { get; }
 
         private readonly EcpContext _context;
 
@@ -102,7 +119,7 @@ namespace ECPV2.Features.employe.ViewModel
             }
         }
 
-        public bool CanEmployeNew() => true;
+        public bool CanEmployeNew() => !IsEditable;
 
         public void ActionEmployeEdit()
         {
@@ -116,9 +133,9 @@ namespace ECPV2.Features.employe.ViewModel
             }
         }
 
-        private bool CanEmployeEdit() => true;
+        private bool CanEmployeEdit() => EmployeSelected != null && !IsEditable;
 
-        private bool CanEmployeSave() => true;
+        private bool CanEmployeSave() => IsEditable;
 
         public void ActionEmployeSave()
         {
